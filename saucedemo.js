@@ -9,8 +9,7 @@ function sleep(ms) {
 }
 
 // Force launch Microsoft Edge
-const vibe = browserSync.launch({ 
-    headless: false, 
+const vibe = browserSync.launch({  
     channel: 'msedge' 
 });
 
@@ -29,7 +28,6 @@ try {
     const png = vibe.screenshot();
     fs.writeFileSync('saucedemo_edge_success.png', png);
     console.log('Login complete. Screenshot saved.');
-
 } catch (error) {
     console.error('Automation failed:', error.message);
     const errPng = vibe.screenshot();
