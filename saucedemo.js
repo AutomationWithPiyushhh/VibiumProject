@@ -17,6 +17,7 @@ try {
     vibe.go('https://www.saucedemo.com/');
     sleep(3000); // Wait for page load
 
+    
     // Login process
     vibe.find('#user-name').type('standard_user');
     vibe.find('#password').type('secret_sauce');
